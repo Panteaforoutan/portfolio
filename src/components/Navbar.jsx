@@ -21,7 +21,7 @@ function Navbar() {
                 <a href="#experience" className="transition-colors hover:text-(--accent)"> Experience </a>
 
                 <button onClick={() => setIsDark(!isDark)} aria-label="Toggle dark mode">
-                    {isDark ? <Sun className="w-5 h-5 text-(--text-h) hover:fill-(--accent)" /> : <Moon className="w-5 h-5 text-(--text-h) hover:fill-(--accent)" />}
+                    {isDark ? <Sun className="w-5 h-5 text-(--text) transition-colors hover:text-(--accent)" /> : <Moon className="w-5 h-5 text-(--text) transition-colors hover:text-(--accent)" />}
                 </button>
 
             </div>

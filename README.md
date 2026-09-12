@@ -1,19 +1,34 @@
-# React + Vite
+# Pantea Foroutan — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+My personal portfolio site — a single-page site covering my background, skills, projects, and experience.
 
-Currently, two official plugins are available:
+**Live site:** [panteaforoutan.github.io/portfolio](https://panteaforoutan.github.io/portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- [React](https://react.dev/) 19
+- [Vite](https://vite.dev/)
+- [Tailwind CSS](https://tailwindcss.com/) v4
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Features
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+- Responsive, single-page layout with smooth-scroll navigation
+- Light/dark mode toggle (persisted across visits)
+- Deployed automatically to GitHub Pages via GitHub Actions on every push to `master`
 
-## Expanding the Oxlint configuration
+## Running Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm install
+npm run dev
+```
+
+Then open the local URL Vite prints (typically `http://localhost:5173`).
+
+## Building
+
+```bash
+npm run build
+```
+
+Outputs a production build to `dist/`.

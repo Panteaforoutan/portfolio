@@ -133,7 +133,7 @@ function About() {
                 </div>
                 <div className="basis-2/3 flex flex-col items-start justify-center">
                     <p className="h1 text-left">
-                        Hi, I'm Pantea <span className="text-[24px] italic font-normal text-(--text)">(PAHN-tee-uh)</span>
+                        Hi, I'm Pantea <span className="text-[24px] italic font-normal text-(--text)">(Pon-teh-âh)</span>
                     </p>
                     <p className='pt-3 text-left text-base leading-7 max-w-2xl text-(--text-h) max-lg:text-[16px] [font-family:var(--sans)]'>
                         I'm a senior Computer Science student at UC San Diego building machine learning systems and full-stack applications — from fine-tuning LLMs and building computer vision pipelines to shipping the frontend and backend around them. Currently looking for full-time SWE / ML roles.

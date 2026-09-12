@@ -13,7 +13,8 @@ function Navbar() {
     }, [isDark])
 
     return (
-        <nav className="flex items-center justify-between pt-5 px-10">
+        <nav className="relative flex items-center justify-between overflow-hidden pt-5 px-10 pb-3">
+            <div className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-r from-(--accent)/0 via-(--accent)/15 to-(--accent)/0" />
             <h2 className="h2">Pantea Foroutan </h2>
             <div className="flex gap-4 text-sm font-semibold">
                 <a href="#about" className="transition-colors hover:text-(--accent)"> About </a>

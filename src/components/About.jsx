@@ -126,7 +126,7 @@ function About() {
                         </a>
                         <a href="https://github.com/PanteaForoutan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                             <svg className="w-7 h-7 fill-(--text-h) hover:fill-(--accent)">
-                                <use href="/icons.svg#github-icon" />
+                                <use href={`${import.meta.env.BASE_URL}icons.svg#github-icon`} />
                             </svg>
                         </a>
                     </div>

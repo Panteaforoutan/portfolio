@@ -2,7 +2,7 @@
 
 My personal portfolio site — a single-page site covering my background, skills, projects, and experience.
 
-**Live site:** [panteaforoutan.github.io/portfolio](https://panteaforoutan.github.io/portfolio/)
+**Live site:** [panteaforoutan.github.io/portfolio](https://www.panteaforoutan.app)
 
 ## Tech Stack
 
@@ -23,7 +23,7 @@ npm install
 npm run dev
 ```
 
-Then open the local URL Vite prints (typically `http://localhost:5173`).
+Then open the local URL Vite prints.
 
 ## Building
 

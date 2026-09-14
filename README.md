@@ -2,7 +2,7 @@
 
 My personal portfolio site — a single-page site covering my background, skills, projects, and experience.
 
-**Live site:** [panteaforoutan.github.io/portfolio](https://www.panteaforoutan.app)
+**Live site:** [panteaforoutan.app](https://www.panteaforoutan.app)
 
 ## Tech Stack
 

@@ -103,7 +103,7 @@ function About() {
 
     return (
         <>
-            <div id="about" className="min-h-[calc(100vh-75px)] flex items-center box-content px-10 flex-row gap-12 justify-center">
+            <div id="about" className="min-h-[calc(100vh-75px)] flex items-center box-content px-10 flex-col lg:flex-row gap-8 lg:gap-12 py-10 justify-center">
                 <div className="basis-1/3 flex flex-col items-center">
                     <div className="relative">
                         <div className="pointer-events-none absolute top-1/2 left-1/2 -z-10 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full " />
@@ -131,15 +131,15 @@ function About() {
                         </a>
                     </div>
                 </div>
-                <div className="basis-2/3 flex flex-col items-start justify-center">
-                    <p className="h1 text-left">
+                <div className="basis-2/3 flex flex-col items-center lg:items-start justify-center text-center lg:text-left">
+                    <p className="h1 text-center lg:text-left">
                         Hi, I'm Pantea <span className="text-[24px] italic font-normal text-(--text)">(Pon-teh-âh)</span>
                     </p>
-                    <p className='pt-3 text-left text-base leading-7 max-w-2xl text-(--text-h) max-lg:text-[16px] [font-family:var(--sans)]'>
+                    <p className='pt-3 text-center lg:text-left text-base leading-7 max-w-2xl text-(--text-h) max-lg:text-[16px] [font-family:var(--sans)]'>
                         I'm a senior Computer Science student at UC San Diego building machine learning systems and full-stack applications — from fine-tuning LLMs and building computer vision pipelines to shipping the frontend and backend around them. Currently looking for full-time SWE / ML roles.
                     </p>
 
-                    <div className="flex flex-wrap gap-2 pt-4">
+                    <div className="flex flex-wrap justify-center lg:justify-start gap-2 pt-4">
                         {["🎓 Graduating Dec 2026", "📍 Irvine, CA"].map((item) => (
                             <span key={item} className="rounded-full bg-(--accent)/10 px-3 py-1 text-xs font-medium text-(--accent)">
                                 {item}
@@ -147,7 +147,7 @@ function About() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div >
 
             <div className="box-content px-10">
                 <div id="projects" className="box-content w-full pt-5 mt-8 border-t border-(--border)">

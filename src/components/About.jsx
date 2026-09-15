@@ -31,7 +31,7 @@ function About() {
                 "Implemented a caching layer so repeat queries against an already-processed shelf image return near-instantly instead of re-running the full pipeline (~1–2 min).",
             ],
             tech: ["React", "Python", "Flask", "Node.js"],
-            link: "#"
+            link: "https://panteaforoutan.github.io/bookFinder/"
         },
         {
             title: "Math Reasoning Fine-tuning LLM ",
@@ -42,7 +42,7 @@ function About() {
                 "Optimized the inference workflow for a 4–5x speedup using vLLM.",
             ],
             tech: ["PyTorch", "LoRA", "vLLM", "Python"],
-            link: "#"
+            link: "https://github.com/Panteaforoutan/151B_SP26_Competition"
         },
         {
             title: "UCSD Market Place",

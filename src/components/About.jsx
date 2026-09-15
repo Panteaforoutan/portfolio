@@ -17,7 +17,7 @@ function About() {
         },
         {
             title: 'Tools & Platforms',
-            items: ['Git', 'GitHub', 'Docker', 'AWS'],
+            items: ['Git', 'GitHub', 'Docker', 'AWS', 'Google Cloud'],
         },
 
     ]
@@ -26,11 +26,14 @@ function About() {
         {
             title: "BookFinder",
             description: [
-                "Built an end-to-end system to help users find a specific book in a physical bookstore: users submit a photo of a shelf, and the pipeline uses SAM for segmentation, OCR, and text matching to locate the book and return its position.",
-                "Built a second pipeline using the Google Books API and Gemini to auto-categorize books into Barnes & Noble-style sections.",
-                "Implemented a caching layer so repeat queries against an already-processed shelf image return near-instantly instead of re-running the full pipeline (~1–2 min).",
+                "Built a computer-vision pipeline that locates a specific book from a photo of a bookstore shelf: SAM for segmentation, OCR for text extraction, and fuzzy matching to identify and localize the target title.",
+                "Built a second pipeline that auto-classifies books into Barnes & Noble-style sections, using the Google Books API for metadata and Gemini for classification.",
+                "Designed a Flask REST API backend and a React frontend for the two pipelines, validated end-to-end against real bookstore shelf photos.",
+                "Added a caching layer for repeat queries against an already-processed shelf image, cutting response time from ~1–2 minutes to near-instant.",
+                "Containerized and deployed the backend (Docker, Gunicorn) to Google Cloud Run; automated frontend deployment to GitHub Pages via GitHub Actions on push."
+
             ],
-            tech: ["React", "Python", "Flask", "Node.js"],
+            tech: ["React", "Python", "Flask", "Node.js", "Docker", "Gunicorn", "Google Cloud Run", "GitHub Actions"],
             link: "https://panteaforoutan.github.io/bookFinder/"
         },
         {
@@ -103,7 +106,7 @@ function About() {
 
     return (
         <>
-            <div id="about" className="min-h-[calc(100vh-75px)] flex items-center box-content px-10 flex-col lg:flex-row gap-8 lg:gap-12 py-10 justify-center">
+            <div id="about" className="min-h-[calc(100vh-75px)] flex items-center box-content px-10 flex-col lg:flex-row gap-8 lg:gap-12 py-10 lg:py-0 justify-center">
                 <div className="basis-1/3 flex flex-col items-center">
                     <div className="relative">
                         <div className="pointer-events-none absolute top-1/2 left-1/2 -z-10 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full " />

@@ -17,7 +17,7 @@ function About() {
         },
         {
             title: 'Tools & Platforms',
-            items: ['Git', 'GitHub', 'Docker', 'AWS', 'Google Cloud'],
+            items: ['Git', 'GitHub', 'Docker', 'Google Cloud'],
         },
 
     ]
@@ -37,25 +37,28 @@ function About() {
             link: "https://panteaforoutan.github.io/bookFinder/"
         },
         {
-            title: "Math Reasoning Fine-tuning LLM ",
+            title: "Math Reasoning Fine-tuning Qwen3-4B ",
             description: [
-                "Fine-tuned a Qwen3-4B model for math reasoning as the primary technical contributor on a small team project.",
-                "Diagnosed and fixed a blocking inference bug, then a second bottleneck (token cap + greedy decoding), raising evaluation accuracy from a 31% baseline to 72% through error analysis and targeted prompt engineering.",
-                "Built a reproducible experiment pipeline (YAML-configured) to speed up trial iteration.",
-                "Optimized the inference workflow for a 4–5x speedup using vLLM.",
+                "Primary technical contributor on a team project fine-tuning Qwen3-4B for math reasoning, owning the training, evaluation, and inference stack.",
+                "Traced a large accuracy gap to the eval harness rather than the model — generations were truncated by an undersized max_model_len. Fixing that and switching to greedy decoding took accuracy from 31% to 67%.",
+                "Reached 72% through error analysis on generated outputs, adding targeted prompt rules and format examples for recurring failure modes.",
+                "Cut inference time 4–5x by disabling eager mode and tuning max_num_seqs in vLLM.",
+                "Built a YAML-configured experiment pipeline after identical configs produced different results, making earlier comparisons unreliable.",
+
             ],
-            tech: ["PyTorch", "LoRA", "vLLM", "Python"],
+            tech: ["PyTorch", "LoRA", "vLLM", "Hugging Face Transformers", "Python"],
             link: "https://github.com/Panteaforoutan/151B_SP26_Competition"
         },
         {
             title: "UCSD Market Place",
             description: [
-                "Built a campus-only marketplace where verified students and staff can list, browse, and trade second-hand items and services.",
-                "Split the UI into reusable vanilla JS Web Components; used Vitest for unit testing and ESLint to keep the codebase clean.",
-                "Backend/auth via Supabase; built with Vite for fast local dev and builds.",
-                "Result: a lightweight, modular codebase built for fast load times and easy extension.",
+                "Campus-only marketplace where verified students and staff can list, browse, and trade second-hand items and services. Team project; owned the backend and data layer.",
+                "Designed and implemented the PostgreSQL schema covering users, listings, and transactions, and wrote the queries backing listing retrieval, search, and filtering.",
+                "Built an image upload path that normalizes arbitrary user-supplied formats into the single format the storage layer accepts, so uploads don't fail on whatever a phone camera produces.",
+                "Integrated the database with Supabase auth so listing access is scoped to verified campus accounts.",
+
             ],
-            tech: ["HTML", "CSS", "JavaScript", "Vite", "Supabase", "Vitest"],
+            tech: ["PostgreSQL", "Supabase", "JavaScript", "Vite"],
             link: "https://github.com/Panteaforoutan/cse110-sp25-group15"
         },
         {

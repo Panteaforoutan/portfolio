@@ -5,19 +5,19 @@ function About() {
     const categories = [
         {
             title: "Languages",
-            items: ["Python", "JavaScript", "Java", "HTML", "C", "C++"]
+            items: ["Python", "JavaScript", "Java", "C", "C++", "SQL"]
         },
         {
             title: 'Web & Frameworks',
-            items: ['React', 'Node.js', 'Flask', 'CSS', 'Tailwind CSS'],
+            items: ['React', 'Flask', 'REST APIs', 'Tailwind CSS'],
         },
         {
             title: 'Machine Learning',
-            items: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'Pandas'],
+            items: ['PyTorch', 'Scikit-learn', 'Pandas', 'TensorFHugging Face Transformers', 'vLLMlow'],
         },
         {
             title: 'Tools & Platforms',
-            items: ['Git', 'GitHub', 'Docker', 'Google Cloud'],
+            items: ['Git', 'Docker', 'PostgreSQL', 'Supabase', 'Google Cloud', 'CI/CD (GitHub Actions)'],
         },
 
     ]
